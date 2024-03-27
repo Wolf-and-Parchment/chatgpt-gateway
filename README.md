@@ -1,4 +1,4 @@
-# chatgpt-proxy
+# chatgpt自建网关部署方案
 
 chatgpt网关部署方案
 
