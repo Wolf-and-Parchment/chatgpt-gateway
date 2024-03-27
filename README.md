@@ -1,1 +1,55 @@
 # chatgpt-proxy
+
+chatgpt网关部署方案
+
+## 写在前面
+部署架构为1网关+N代理节点组成，可根据自身GPT账号规模调整代理节点数量，建议GPT账号与代理节点，10:1，当然网关自身也可以是代理节点
+
+## 部署流程
+
+### 安装网关
+
+执行一键部署脚本
+
+```
+curl -sSfL -o proxy-node-quick-install.sh https://raw.githubusercontent.com/hanglegehang/chatgpt-proxy-node-deploy/main/proxy-node-quick-install.sh && bash proxy-node-quick-install.sh
+
+```
+##### 安装说明
+AuthKey : 接口访问秘钥，对应share配置中的AuthKey，填写free为裸奔模式，忽略鉴权
+
+Licence : 授权码，联系客服获取，需提供主节点IP
+
+脚本安装成功后会打印网关地址，可以自行配置反代、https等，处理完成后修改share启动参数即可：
+
+```
+CHATPROXY: "http://部署节点机器IP:8100"
+
+AUTHKEY: "你配置的值"
+```
+#### 配置项说明
+配置文件目录`/opt/chatgpt-proxy-node/config.yaml`
+```
+PROXY_URL : 代理节点地址，默认无代理  
+AUTH_KEY : 网关访问秘钥
+LICENCE : 授权码，联系客服获取
+AUTH_KEY_HEADER ：秘钥查询header key，默认为AuthKey，非share网关可自行配置
+XY_GATEWAY : xy付费用户桥接配置项，付费网关地址，默认为https://demo.xyhelper.cn，
+XY_GATEWAY_AUTH_KEY : xy付费用户桥接配置项，付费网关key,默认为xyhelper
+```
+
+### 代理节点
+
+执行一键部署脚本
+```
+curl -sSfL -o proxy-glider-quick-install.sh https://raw.githubusercontent.com/hanglegehang/chatgpt-proxy-glider-deploy/main/proxy-glider-quick-install.sh && bash proxy-glider-quick-install.sh
+```
+输入代理端口、账号、密码，如无特殊情况，一路回车即可
+安装完成后会打印代理节点地址，复制留存
+
+编辑主节点机器 `/opt/chatgpt-proxy-node/config.yaml`，将代理地址填入配置文件，该文件热更新，无需重启容器，形如：
+<img width="571" alt="image" src="https://github.com/hanglegehang/chatgpt-proxy/assets/20039029/4db55be5-fd24-40a7-9e0d-4a896ae91b74">
+
+
+
+
