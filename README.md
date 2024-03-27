@@ -43,7 +43,10 @@ XY_GATEWAY_AUTH_KEY : xy付费用户桥接配置项，付费网关key,默认为x
 curl -sSfL -o proxy-glider-quick-install.sh https://raw.githubusercontent.com/hanglegehang/chatgpt-proxy-glider-deploy/main/proxy-glider-quick-install.sh && bash proxy-glider-quick-install.sh
 ```
 输入代理端口、账号、密码，如无特殊情况，一路回车即可
+
 安装完成后会打印代理节点地址，复制留存
+
+检查网关代理是否启动成功，`curl -x socks5://代理节点地址 myip.ipip.net`
 
 编辑主节点机器 `/opt/chatgpt-proxy-node/config.yaml`，将代理地址填入配置文件，该文件热更新，无需重启容器，形如：
 <img width="571" alt="image" src="https://github.com/hanglegehang/chatgpt-proxy/assets/20039029/4db55be5-fd24-40a7-9e0d-4a896ae91b74">
