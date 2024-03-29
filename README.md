@@ -38,7 +38,7 @@ PROXY_URL :
   - socks5://xx:yy@111.222.333.444:8443 
 AUTH_KEY : 网关访问秘钥
 LICENCE : 授权码，联系客服获取
-AUTH_KEY_HEADER ：header中秘钥key名称，默认为AuthKey，非share网关可自行配置
+AUTH_KEY_HEADER ：header中秘钥key名称，默认为AuthKey，**share网关不要配置该值**，非share网关可自行配置
 XY_GATEWAY : xy付费用户桥接配置项，付费网关地址，默认为https://demo.xyhelper.cn，
 XY_GATEWAY_AUTH_KEY : xy付费用户桥接配置项，付费网关key,默认为xyhelper
 ```
