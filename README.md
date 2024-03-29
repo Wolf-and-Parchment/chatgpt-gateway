@@ -5,6 +5,8 @@
 
 所有节点均需自行准备机器，这里推荐一个VPS厂商，支持月付，购买美国节点即可，我自己集群也在用 [鼎力云VPS](https://www.dingliyun.cn/aff/QZYJIOYW)
 
+注意：登录默认走xyhelper网关（获取session)，提供配置可桥接到付费接入点，感谢xy大佬~
+
 ## 部署流程
 
 ### 安装网关
