@@ -15,7 +15,7 @@
 执行一键部署脚本
 
 ```
-curl -sSfL -o proxy-node-quick-install.sh https://raw.githubusercontent.com/hanglegehang/chatgpt-proxy-node-deploy/main/proxy-node-quick-install.sh && bash proxy-node-quick-install.sh
+curl -sSfL -o gateway-node-quick-install.sh https://raw.githubusercontent.com/wm-chatgpt/chatgpt-gateway-node-deploy/main/gateway-node-quick-install.sh && bash gateway-node-quick-install.sh
 
 ```
 ##### 安装说明
@@ -31,7 +31,7 @@ CHATPROXY: "http://部署节点机器IP:8100"
 AUTHKEY: "你配置的值"
 ```
 #### 配置项说明
-配置文件目录`/opt/chatgpt-proxy-node/config.yaml`
+配置文件目录`/opt/chatgpt-gateway-node/config.yaml`
 ```
 # 代理节点地址，默认无代理  
 PROXY_URL :
@@ -47,7 +47,7 @@ XY_GATEWAY_AUTH_KEY : xy付费用户桥接配置项，付费网关key,默认为x
 
 执行一键部署脚本
 ```
-curl -sSfL -o proxy-glider-quick-install.sh https://raw.githubusercontent.com/hanglegehang/chatgpt-proxy-glider-deploy/main/proxy-glider-quick-install.sh && bash proxy-glider-quick-install.sh
+curl -sSfL -o proxy-node-quick-install.sh https://raw.githubusercontent.com/wm-chatgpt/chatgpt-proxy-glider-deploy/main/proxy-node-quick-install.sh && bash proxy-node-quick-install.sh
 ```
 输入代理端口、账号、密码，如无特殊情况，一路回车即可
 
@@ -55,8 +55,8 @@ curl -sSfL -o proxy-glider-quick-install.sh https://raw.githubusercontent.com/ha
 
 检查网关代理是否启动成功，`curl -x socks5://代理节点地址 myip.ipip.net`
 
-编辑主节点机器 `/opt/chatgpt-proxy-node/config.yaml`，将代理地址填入配置文件，该文件热更新，无需重启容器，形如：
-<img width="571" alt="image" src="https://github.com/hanglegehang/chatgpt-proxy/assets/20039029/4db55be5-fd24-40a7-9e0d-4a896ae91b74">
+编辑主节点机器 `/opt/chatgpt-gateway-node/config.yaml`，将代理地址填入配置文件，该文件热更新，无需重启容器，形如：
+<img width="571" alt="image" src="https://github.com/wm-chatgpt/chatgpt-proxy/assets/20039029/4db55be5-fd24-40a7-9e0d-4a896ae91b74">
 
 
 
