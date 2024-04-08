@@ -47,7 +47,7 @@ XY_GATEWAY_AUTH_KEY : xy付费用户桥接配置项，付费网关key,默认为x
 
 执行一键部署脚本
 ```
-curl -sSfL -o proxy-node-quick-install.sh https://raw.githubusercontent.com/wm-chatgpt/chatgpt-proxy-glider-deploy/main/proxy-node-quick-install.sh && bash proxy-node-quick-install.sh
+curl -sSfL -o proxy-node-quick-install.sh https://raw.githubusercontent.com/wm-chatgpt/chatgpt-proxy-node-deploy/main/proxy-node-quick-install.sh && bash proxy-node-quick-install.sh
 ```
 输入代理端口、账号、密码，如无特殊情况，一路回车即可
 
