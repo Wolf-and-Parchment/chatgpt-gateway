@@ -44,7 +44,7 @@ XY_GATEWAY_AUTH_KEY : xy付费用户桥接配置项，付费网关key,默认为x
 ```
 
 #### 监控说明
-新建uptime-kuma监控，https://github.com/louislam/uptime-kuma
+基于uptime-kuma监控，https://github.com/louislam/uptime-kuma
 如图配置即可
 <img width="500" alt="image" src="https://github.com/wm-chatgpt/chatgpt-gateway/assets/20039029/7a0be9bf-cb85-423a-8c5f-8bf2fe9c4699">
 
