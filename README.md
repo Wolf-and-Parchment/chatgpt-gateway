@@ -5,7 +5,7 @@
 
 所有节点均需自行准备机器，这里推荐一个VPS厂商，支持月付，购买美国节点即可，我自己集群也在用 [鼎力云VPS](https://www.dingliyun.cn/aff/QZYJIOYW)
 
-注意：登录默认走xyhelper网关（获取session)，提供配置可桥接到付费接入点，感谢xy大佬~，**本网关不支持转API**
+注意：：**本网关不支持转API**
 
 
 ## 部署流程
@@ -39,8 +39,6 @@ PROXY_URL :
 AUTH_KEY : 网关访问秘钥
 LICENCE : 授权码，联系客服获取
 AUTH_KEY_HEADER ：header中秘钥key名称，默认为AuthKey，**share网关不要配置该值**，非share网关可自行配置
-XY_GATEWAY : xy付费用户桥接配置项，付费网关地址，默认为https://demo.xyhelper.cn，
-XY_GATEWAY_AUTH_KEY : xy付费用户桥接配置项，付费网关key,默认为xyhelper
 ```
 
 #### 监控说明
