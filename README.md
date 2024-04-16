@@ -44,7 +44,11 @@ AUTH_KEY_HEADER ：header中秘钥key名称，默认为AuthKey，**share网关�
 #### 监控说明
 基于uptime-kuma监控，https://github.com/louislam/uptime-kuma
 如图配置即可
-<img width="500" alt="image" src="https://github.com/wm-chatgpt/chatgpt-gateway/assets/20039029/7a0be9bf-cb85-423a-8c5f-8bf2fe9c4699">
+<img width="700" alt="image" src="https://github.com/wm-chatgpt/chatgpt-gateway/assets/20039029/1d8c99df-01c9-4540-99f4-cc894799dc75">
+
+* http://网关地址/gateway/ping
+* json查询方式 关键词：forbiddenIps 期望值：node
+* header增加AUTH_KEY {"authkey":"你的key"}
 
 
 ### 负载节点
