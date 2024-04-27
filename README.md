@@ -65,7 +65,7 @@ curl -sSfL -o proxy-node-quick-install.sh https://raw.githubusercontent.com/wm-c
 
 检查网关代理是否启动成功，`curl -x socks5://代理节点地址 myip.ipip.net`
 
-编辑主节点机器 `/opt/chatgpt-gateway-node/config.yaml`，将代理地址填入配置文件，该文件热更新，无需重启容器，形如：
+编辑主节点机器 `安装目录下的config.yaml`，将代理地址填入配置文件，该文件热更新，无需重启容器，形如：
 
 <img width="645" alt="image" src="https://github.com/wm-chatgpt/chatgpt-gateway/assets/20039029/64c6ab2d-d42b-45ec-b4c9-6cef9ac47121">
 
