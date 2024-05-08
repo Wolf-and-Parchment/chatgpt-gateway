@@ -8,6 +8,7 @@
 这里推荐一个VPS厂商，支持月付，购买美国节点即可，我自己集群也在用 [鼎力云VPS](https://www.dingliyun.cn/aff/QZYJIOYW)
 
 如不想购买vps，使用动态住宅ip也可，推荐一个厂商：https://www.ipwo.net
+
 注意：：**本网关不支持转API**
 
 
